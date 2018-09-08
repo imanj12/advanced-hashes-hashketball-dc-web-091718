@@ -133,5 +133,3 @@ def num_points_scored(name)
     end
   end  
 end
-
-num_points_scored("Alan Anderson")
