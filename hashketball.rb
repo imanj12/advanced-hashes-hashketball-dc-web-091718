@@ -207,10 +207,14 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-
+  shoe_size_array = []
   game_hash.each do |status, team_stats|
     team_stats[:players].each do |name, stats|
-      
+      shoe_size_array << stats[:shoe]
+    end
+  end
+  
+  
 
 end
 
