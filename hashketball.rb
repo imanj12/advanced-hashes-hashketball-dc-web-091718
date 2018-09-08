@@ -164,10 +164,16 @@ def team_colors(name)
 end
 
 def team_names
-
+  team_names = []
   game_hash.each do |status, team_stats|
-    
+    team_stats.each do |t_stats, values|
+      if t_stats == :team_name
+        team_names << values
+      end
+    end
   end
-
+  team_names
+  
+  
 end
 
