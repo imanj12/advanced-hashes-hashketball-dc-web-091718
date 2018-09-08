@@ -190,9 +190,19 @@ def player_numbers(team)
   jersey_numbers
 end
 
-def player_stats
+def player_stats(name)
 
-  
+  game_hash.each do |status, team_stats|
+    team_stats.each do |t_stats, values|
+      if t_stats == :players
+        values.each do |names, stats|
+          if names == name
+            return stats
+          end
+        end
+      end
+    end
+  end
 
 end
 
