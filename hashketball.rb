@@ -183,6 +183,7 @@ def player_numbers(team)
       if values == team
         team_stats[:players].each do |name, stats|
           jersey_numbers << stats[:number]
+        end
       end
     end
   end
