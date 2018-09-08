@@ -214,7 +214,7 @@ def big_shoe_rebounds
     end
   end
   
-  
+  biggest_shoe = shoe_size_array
 
 end
 
