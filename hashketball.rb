@@ -165,7 +165,9 @@ end
 
 def team_names
 
-  
+  game_hash.each do |status, team_stats|
+    
+  end
 
 end
 
